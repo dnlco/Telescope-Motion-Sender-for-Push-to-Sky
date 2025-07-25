@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Not connected"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/azimuthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azimuth: 0.0000"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/altitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude: 0.0000"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/ipAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Desktop IP Address"
+        android:inputType="textNoSuggestions"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/portEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Port"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Sending"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Sending"/>
+
+</LinearLayout>
